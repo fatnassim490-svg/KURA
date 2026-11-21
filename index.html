@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KURA — Politique de confidentialité et Conditions d'utilisation</title>
+<meta name="description" content="KURA — Politique de confidentialité et Conditions d'utilisation / Privacy Policy and Terms of Service." />
+<meta name="theme-color" content="#0B120E" />
+<!-- KURA — page légale (FR/EN). Logo attendu : logo-kura.png dans le même dossier. -->
+<style>
+  :root {
+    --bg: #0B120E;
+    --card: #131E18;
+    --card-2: #182620;
+    --border: rgba(52, 211, 153, 0.16);
+    --border-soft: rgba(255, 255, 255, 0.07);
+    --text: #E8F3ED;
+    --muted: #9DB3A8;
+    --accent: #34D399;
+    --accent-2: #10B981;
+    --warn: #F5B544;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 88px; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: radial-gradient(1100px 520px at 50% -140px, rgba(16, 185, 129, 0.14), transparent 70%), var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px 64px; }
+
+  /* ---------- En-tête ---------- */
+  header.top {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(11, 18, 14, 0.88);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .top-inner { max-width: 860px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1 1 260px; }
+  .brand img { width: 44px; height: 44px; border-radius: 12px; object-fit: contain; background: var(--card); border: 1px solid var(--border); flex: none; }
+  .brand h1 { margin: 0; font-size: 17px; line-height: 1.25; font-weight: 800; letter-spacing: -0.01em; }
+    .brand h1 small { display: block; margin-top: 2px; font-size: 12.5px; font-weight: 600; color: var(--muted); letter-spacing: 0; }
+
+  .lang-toggle { display: inline-flex; padding: 3px; gap: 2px; background: var(--card); border: 1px solid var(--border); border-radius: 999px; flex: none; }
+  .lang-toggle button {
+    appearance: none; border: 0; background: transparent; color: var(--muted);
+    font: inherit; font-size: 13.5px; font-weight: 700; padding: 8px 14px; border-radius: 999px; cursor: pointer;
+    transition: background .15s, color .15s; white-space: nowrap;
+  }
+  .lang-toggle button[aria-pressed="true"] { background: linear-gradient(135deg, var(--accent-2), var(--accent)); color: #04130C; }
+  .lang-toggle button:focus-visible, .quick a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  nav.quick { max-width: 860px; margin: 0 auto; padding: 0 16px 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+  nav.quick a {
+    text-decoration: none; font-size: 13.5px; font-weight: 700; color: var(--text);
+    padding: 8px 14px; border-radius: 999px; background: var(--card); border: 1px solid var(--border-soft);
+    transition: border-color .15s, color .15s;
+  }
+  nav.quick a:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- Contenu ---------- */
+  main { padding-top: 24px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 22px 22px; margin: 0 0 18px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22); }
+  .intro { background: linear-gradient(180deg, var(--card-2), var(--card)); }
+  .intro p:first-child { margin-top: 0; font-size: 17px; }
+  .intro p:last-child { margin-bottom: 0; color: var(--muted); font-size: 14.5px; }
+  .legal h2 { margin: 0 0 12px; font-size: 24px; line-height: 1.25; letter-spacing: -0.02em; color: var(--accent); }
+  .legal h3 { margin: 26px 0 8px; font-size: 16.5px; line-height: 1.35; color: var(--text); }
+  .legal h3::before { content: ""; display: inline-block; width: 4px; height: 14px; margin-right: 9px; border-radius: 2px; background: var(--accent-2); vertical-align: -1px; }
+  .legal p { margin: 0 0 12px; color: #CFE0D7; }
+  .legal ul { margin: 0 0 14px; padding-left: 20px; color: #CFE0D7; }
+  .legal li { margin: 0 0 8px; }
+  .legal li::marker { color: var(--accent-2); }
+  .legal strong { color: var(--text); }
+  .table-wrap { overflow-x: auto; margin: 6px 0 14px; border: 1px solid var(--border-soft); border-radius: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 560px; }
+  th, td { text-align: left; padding: 11px 14px; vertical-align: top; border-bottom: 1px solid var(--border-soft); }
+  th { background: var(--card-2); color: var(--accent); font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.05em; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 700; color: var(--text); white-space: nowrap; }
+
+  .ph { background: rgba(245, 181, 68, 0.18); color: var(--warn); border-radius: 6px; padding: 1px 6px; font-weight: 700; }
+
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 12px 0 0; }
+
+  /* ---------- Langue (FR par défaut) ---------- */
+  [data-l="en"], .quick[data-l="en"], .t-en { display: none; }
+  html[data-lang="en"] [data-l="fr"], html[data-lang="en"] .t-fr { display: none; }
+  html[data-lang="en"] [data-l="en"], html[data-lang="en"] .t-en { display: block; }
+  html[data-lang="en"] nav.quick[data-l="en"] { display: flex; }
+  html[data-lang="fr"] nav.quick[data-l="fr"] { display: flex; }
+  html[data-lang="fr"] .t-fr { display: block; }
+  /* Sans JavaScript : tout est visible */
+  .no-js [data-l], .no-js .t-fr, .no-js .t-en { display: block !important; }
+  .no-js nav.quick[data-l] { display: flex !important; }
+
+  @media (max-width: 560px) {
+    header.top { position: static; }
+    html { scroll-padding-top: 12px; }
+    .card { padding: 18px 16px; border-radius: 16px; }
+    .legal h2 { font-size: 21px; }
+    .brand h1 { font-size: 15.5px; }
+    .lang-toggle { width: 100%; }
+    .lang-toggle button { flex: 1; text-align: center; }
+    .brand { flex-basis: 100%; }
+    /* Tableau en cartes sur mobile */
+    table { min-width: 0; }
+    thead { display: none; }
+    tr { display: block; padding: 10px 14px; border-bottom: 1px solid var(--border-soft); }
+    tr:last-child { border-bottom: 0; }
+    td { display: block; border: 0; padding: 4px 0; white-space: normal !important; }
+    td::before { content: attr(data-label); display: block; font-size: 11.5px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent-2); }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  @media print { body { background: #fff; color: #000; } header.top { position: static; } .card { box-shadow: none; border-color: #ccc; background: #fff; } .legal p, .legal ul { color: #111; } .lang-toggle, nav.quick { display: none !important; } }
+</style>
+<script>document.documentElement.className += " no-js";</script>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <img src="logo-kura.png" alt="KURA" width="44" height="44" onerror="this.style.display='none'" />
+      <h1>
+        <span class="t t-fr">KURA — Suivi nutritionnel bienveillant<small>Politique de confidentialité et Conditions d'utilisation</small></span>
+        <span class="t t-en">KURA — Gentle nutrition tracking<small>Privacy Policy and Terms of Service</small></span>
+      </h1>
+    </div>
+    <div class="lang-toggle" role="group" aria-label="Langue / Language">
+      <button type="button" data-set-lang="fr" aria-pressed="true">🇫🇷 Français</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">🇬🇧 English</button>
+    </div>
+  </div>
+  <nav class="quick" data-l="fr" aria-label="Sections">
+    <a href="#privacy-fr">Politique de confidentialité</a>
+    <a href="#terms-fr">Conditions d'utilisation</a>
+  </nav>
+  <nav class="quick" data-l="en" aria-label="Sections">
+    <a href="#privacy-en">Privacy Policy</a>
+    <a href="#terms-en">Terms of Service</a>
+  </nav>
+</header>
+
+<div class="wrap">
+<main>
+<section class="card intro" data-l="fr">
+<p>KURA est une application mobile de suivi des calories et des repas, éditée par Mohamed (Algérie). Pour toute question, écris-nous à : fatnassim490@gmail.com.</p>
+<p>Dernière mise à jour : 21 novembre 2026.</p>
+</section>
+<section class="card legal" id="privacy-fr" data-l="fr">
+<h2>1. Politique de confidentialité</h2>
+<p>Ta vie privée compte. Cette page explique quelles données KURA utilise, pourquoi, avec quels services, et comment tu gardes le contrôle. Nous ne vendons jamais tes données.</p>
+<h3>1.1 Données que nous traitons</h3>
+<ul><li><strong>Compte</strong> : adresse e-mail et mot de passe (le mot de passe est géré de façon sécurisée par notre prestataire d'authentification ; nous ne le voyons jamais en clair).</li><li><strong>Profil</strong> : prénom, sexe, âge, taille, poids actuel et poids de départ, poids cible, objectif, rythme, fréquence d'entraînement, allergies et préférences alimentaires.</li><li><strong>Journal</strong> : repas enregistrés (nom, calories, macronutriments, quantités, date, photo du repas si tu en ajoutes une), eau consommée, historique de poids, objectifs.</li><li><strong>Photos de repas</strong> : uniquement lorsque tu utilises le scan photo, pour analyser le contenu de l'assiette.</li><li><strong>Pas quotidiens</strong> : uniquement si tu actives la connexion à Apple Santé ou Health Connect.</li><li><strong>Achats</strong> : identifiant d'abonné et statut de ton abonnement KURA Pro (nous ne recevons jamais ton numéro de carte).</li><li><strong>Publicité</strong> : identifiants publicitaires de l'appareil et données techniques liées à l'affichage de publicités récompensées (utilisateurs gratuits).</li><li><strong>Données techniques</strong> : type d'appareil, version du système, journaux d'erreurs nécessaires au bon fonctionnement.</li></ul>
+<h3>1.2 Pourquoi nous les utilisons</h3>
+<ul><li>Fournir l'application : calculer tes objectifs, afficher ton journal, tes statistiques et ton historique.</li><li>Synchroniser et sauvegarder tes données dans ton compte pour les retrouver sur un autre appareil.</li><li>Analyser tes photos de repas et reconnaître les produits scannés.</li><li>Gérer l'abonnement KURA Pro et afficher des publicités aux utilisateurs gratuits.</li><li>Sécuriser le service (limitation d'abus) et corriger les bugs.</li></ul>
+<p>Base légale (RGPD) : exécution du contrat (fournir l'application), consentement (photos, santé, publicité personnalisée lorsque requis) et intérêt légitime (sécurité).</p>
+<h3>1.3 Services tiers utilisés par KURA</h3>
+<div class="table-wrap"><table><thead><tr><th>Service</th><th>Rôle</th><th>Données concernées</th></tr></thead><tbody><tr><td data-label="Service">Supabase</td><td data-label="Rôle">Compte, base de données, stockage et fonctions serveur</td><td data-label="Données concernées">E-mail, profil, repas, poids, photos de repas envoyées pour analyse</td></tr><tr><td data-label="Service">Google Gemini (IA)</td><td data-label="Rôle">Analyse des photos de repas et des étiquettes nutritionnelles</td><td data-label="Données concernées">Image envoyée via nos serveurs, sans ton nom ni ton e-mail</td></tr><tr><td data-label="Service">Apple HealthKit / Google Health Connect</td><td data-label="Rôle">Lecture facultative de tes pas</td><td data-label="Données concernées">Nombre de pas du jour (lecture seule, sur ton appareil)</td></tr><tr><td data-label="Service">Google AdMob</td><td data-label="Rôle">Publicités récompensées pour les utilisateurs gratuits</td><td data-label="Données concernées">Identifiant publicitaire, données techniques de l'appareil</td></tr><tr><td data-label="Service">RevenueCat</td><td data-label="Rôle">Gestion des abonnements KURA Pro</td><td data-label="Données concernées">Identifiant d'abonné, statut et historique d'achat</td></tr><tr><td data-label="Service">Open Food Facts</td><td data-label="Rôle">Informations nutritionnelles des codes-barres</td><td data-label="Données concernées">Numéro de code-barres scanné</td></tr><tr><td data-label="Service">Unsplash</td><td data-label="Rôle">Photos d'illustration des recettes</td><td data-label="Données concernées">Aucune donnée personnelle</td></tr></tbody></table></div>
+<p>Chacun de ces services applique sa propre politique de confidentialité.</p>
+<h3>1.4 Détails importants</h3>
+<ul><li><strong>Analyse photo par IA</strong> : la photo est envoyée à nos serveurs puis à Google Gemini uniquement pour estimer le repas. Elle n'est pas utilisée pour faire de la publicité. L'analyse est une estimation indicative.</li><li><strong>Apple Santé et Health Connect</strong> : la connexion est facultative et en lecture seule. KURA lit uniquement tes pas pour les afficher. Ces données ne sont ni vendues, ni utilisées pour la publicité ou le marketing, ni partagées avec des courtiers en données. Tu peux retirer l'accès à tout moment dans les réglages de ton téléphone.</li><li><strong>Publicités</strong> : les utilisateurs gratuits peuvent regarder une courte publicité récompensée pour débloquer un résultat de scan. KURA Pro supprime les publicités. Tu peux gérer l'identifiant publicitaire dans les réglages de ton appareil (limiter le suivi publicitaire, ou refuser le suivi sur iOS).</li><li><strong>Rappels</strong> : les notifications de rappel sont locales, programmées sur ton appareil, et optionnelles. Tu choisis les créneaux et tu peux les désactiver à tout moment.</li><li><strong>Hors connexion</strong> : certaines données restent stockées sur ton appareil. Les fonctions de scan nécessitent une connexion internet.</li></ul>
+<h3>1.5 Durée de conservation</h3>
+<p>Nous conservons tes données tant que ton compte existe. Si tu supprimes ton compte, tes données de compte, de profil, de journal, de poids et tes photos sont supprimées de nos serveurs. Certaines informations peuvent être conservées plus longtemps si la loi l'exige (par exemple les justificatifs d'achat gérés par Apple, Google et RevenueCat).</p>
+<h3>1.6 Suppression de ton compte et de tes données</h3>
+<p>Tu peux supprimer ton compte et toutes tes données directement dans l'application : <strong>Profil → Supprimer mon compte</strong>. La suppression est définitive. Si tu ne peux pas accéder à l'application, écris à fatnassim490@gmail.com depuis l'adresse de ton compte et nous supprimerons ton compte.</p>
+<p>Si tu as un abonnement KURA Pro, supprimer ton compte ne l'annule pas : annule-le dans les réglages de l'App Store ou de Google Play.</p>
+<h3>1.7 Tes droits</h3>
+<p>Selon ton pays (RGPD dans l'Union européenne, autres lois locales), tu peux demander l'accès, la rectification, la suppression, la limitation, la portabilité de tes données, et t'opposer à certains traitements. Tu peux retirer ton consentement à tout moment. Contact : fatnassim490@gmail.com. Tu peux aussi saisir l'autorité de protection des données de ton pays (en France : la CNIL).</p>
+<h3>1.8 Transferts internationaux</h3>
+<p>Nos prestataires peuvent traiter des données en dehors de ton pays, notamment aux États-Unis. Dans ce cas, des garanties appropriées (clauses contractuelles types ou mécanismes équivalents) sont appliquées.</p>
+<h3>1.9 Sécurité</h3>
+<p>Les échanges sont chiffrés (HTTPS). Chaque utilisateur n'accède qu'à ses propres données, et les fonctions sensibles sont protégées par authentification et limites d'usage. Aucun système n'est infaillible, mais nous prenons la sécurité au sérieux.</p>
+<h3>1.10 Âge minimum</h3>
+<p>KURA s'adresse aux personnes de 13 ans et plus (ou à l'âge minimum de consentement numérique de ton pays s'il est plus élevé, par exemple 15 ans en France). Nous ne collectons pas sciemment de données d'enfants plus jeunes. Si tu penses qu'un enfant nous a transmis des données, contacte-nous pour les supprimer.</p>
+<h3>1.11 Modifications</h3>
+<p>Nous pouvons mettre à jour cette politique. En cas de changement important, nous t'en informerons dans l'application. La date de dernière mise à jour figure en haut de cette page.</p>
+</section>
+<section class="card legal" id="terms-fr" data-l="fr">
+<h2>2. Conditions d'utilisation</h2>
+<p>En utilisant KURA, tu acceptes les présentes conditions. Si tu ne les acceptes pas, n'utilise pas l'application.</p>
+<h3>2.1 Le service</h3>
+<p>KURA est un outil de suivi nutritionnel général : journal de repas, estimation des calories et des macronutriments, statistiques, idées de recettes et rappels. Certaines fonctions sont gratuites, d'autres sont réservées à l'abonnement KURA Pro.</p>
+<h3>2.2 Avertissement médical</h3>
+<p>KURA ne fournit pas de conseil médical, de diagnostic ni de traitement. Les objectifs, calories, macronutriments et analyses de photos sont des <strong>estimations indicatives</strong>, qui peuvent comporter des erreurs. KURA ne remplace pas l'avis d'un médecin, d'un diététicien ou d'un autre professionnel de santé. Consulte un professionnel avant de modifier ton alimentation ou ton activité physique, surtout si tu es enceinte, si tu as une maladie, un trouble du comportement alimentaire, des allergies ou si tu suis un traitement. Ne retarde jamais une consultation à cause de ce que tu lis dans l'application. En cas d'urgence, contacte les services d'urgence.</p>
+<h3>2.3 Ton compte</h3>
+<p>Tu es responsable de l'exactitude des informations que tu fournis et de la confidentialité de ton mot de passe. Tu dois avoir au moins 13 ans (ou l'âge minimum requis dans ton pays). Tu peux supprimer ton compte à tout moment dans <strong>Profil → Supprimer mon compte</strong>.</p>
+<h3>2.4 Utilisation acceptable</h3>
+<p>Tu t'engages à ne pas : détourner l'application ou ses services (par exemple contourner les publicités récompensées ou l'abonnement), tenter d'accéder aux données d'autres utilisateurs, envoyer des contenus illégaux ou sans rapport avec la nourriture, ou surcharger nos serveurs par des requêtes automatisées.</p>
+<h3>2.5 Abonnement KURA Pro (auto-renouvelable)</h3>
+<ul><li><strong>Offres</strong> : KURA Pro est proposé en abonnement mensuel ou annuel. Les prix affichés dans l'application avant l'achat font foi, et peuvent varier selon ton pays et les taxes.</li><li><strong>Paiement</strong> : le paiement est débité sur ton compte Apple (App Store) ou Google Play lors de la confirmation de l'achat.</li><li><strong>Renouvellement automatique</strong> : l'abonnement se renouvelle automatiquement pour une période identique, au même prix, sauf si tu l'annules au moins 24 heures avant la fin de la période en cours. Le compte est débité dans les 24 heures précédant la fin de la période.</li><li><strong>Gestion et annulation</strong> : tu gères ou annules ton abonnement dans les réglages de ton compte Apple (Réglages → ton nom → Abonnements) ou dans Google Play (Paiements et abonnements → Abonnements). La désinstallation de l'application ou la suppression de ton compte KURA n'annule pas l'abonnement.</li><li><strong>Remboursements</strong> : ils sont traités par Apple ou Google selon leurs règles. Nous ne pouvons pas rembourser directement un achat fait via un store.</li><li><strong>Période d'essai</strong> : si une période d'essai gratuite est proposée, elle est indiquée avant l'achat, et l'abonnement payant démarre à la fin de l'essai sauf annulation avant.</li><li><strong>Droit de rétractation (UE)</strong> : pour un contenu numérique fourni immédiatement, tu reconnais que l'exécution commence dès l'achat, dans les limites prévues par la loi et par les règles du store.</li></ul>
+<h3>2.6 Publicités</h3>
+<p>Les utilisateurs gratuits peuvent voir des publicités récompensées pour débloquer les résultats de scan. Les publicités sont fournies par Google AdMob. Nous ne contrôlons pas le contenu des annonces des annonceurs.</p>
+<h3>2.7 Propriété intellectuelle</h3>
+<p>KURA, son nom, son logo, son code et ses contenus sont protégés. Nous te donnons un droit personnel, non exclusif et révocable d'utiliser l'application. Tes données restent les tiennes.</p>
+<h3>2.8 Disponibilité et limitation de responsabilité</h3>
+<p>KURA est fourni « tel quel », sans garantie d'exactitude ni de disponibilité continue. Dans les limites autorisées par la loi, nous ne sommes pas responsables des dommages indirects, ni des décisions que tu prends en te basant sur les estimations de l'application. Rien dans ces conditions ne limite les droits que la loi t'accorde en tant que consommateur.</p>
+<h3>2.9 Fin du service</h3>
+<p>Nous pouvons suspendre ou supprimer un compte en cas de non-respect de ces conditions. Tu peux arrêter d'utiliser KURA à tout moment.</p>
+<h3>2.10 Droit applicable et modifications</h3>
+<p>Ces conditions sont soumises au droit de Algérie, sans préjudice des règles de protection des consommateurs de ton pays de résidence. Nous pouvons modifier ces conditions ; l'utilisation continue de l'application après une mise à jour vaut acceptation.</p>
+<h3>2.11 Contact et support</h3>
+<p>Questions, support ou demande liée à tes données : fatnassim490@gmail.com.</p>
+</section>
+
+<section class="card intro" data-l="en">
+<p>KURA is a mobile app for tracking calories and meals, published by Mohamed (Algeria). For any question, contact us at: fatnassim490@gmail.com.</p>
+<p>Last updated: November 21, 2026.</p>
+</section>
+<section class="card legal" id="privacy-en" data-l="en">
+<h2>1. Privacy Policy</h2>
+<p>Your privacy matters. This page explains what data KURA uses, why, with which services, and how you stay in control. We never sell your data.</p>
+<h3>1.1 Data we process</h3>
+<ul><li><strong>Account</strong>: email address and password (the password is handled securely by our authentication provider; we never see it in clear text).</li><li><strong>Profile</strong>: first name, sex, age, height, current and starting weight, target weight, goal, pace, training frequency, allergies and dietary preferences.</li><li><strong>Log</strong>: logged meals (name, calories, macronutrients, quantities, date, meal photo if you add one), water intake, weight history, goals.</li><li><strong>Meal photos</strong>: only when you use photo scan, to analyze what is on your plate.</li><li><strong>Daily steps</strong>: only if you enable the connection to Apple Health or Health Connect.</li><li><strong>Purchases</strong>: subscriber ID and the status of your KURA Pro subscription (we never receive your card number).</li><li><strong>Advertising</strong>: device advertising identifiers and technical data related to rewarded ads (free users).</li><li><strong>Technical data</strong>: device type, OS version, error logs needed for the app to work properly.</li></ul>
+<h3>1.2 Why we use it</h3>
+<ul><li>To provide the app: compute your goals and show your log, stats and history.</li><li>To sync and back up your data in your account so you can find it on another device.</li><li>To analyze your meal photos and recognize scanned products.</li><li>To manage the KURA Pro subscription and show ads to free users.</li><li>To keep the service secure (abuse limits) and fix bugs.</li></ul>
+<p>Legal basis (GDPR): performance of the contract (providing the app), consent (photos, health, personalized ads where required) and legitimate interest (security).</p>
+<h3>1.3 Third-party services used by KURA</h3>
+<div class="table-wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Data involved</th></tr></thead><tbody><tr><td data-label="Service">Supabase</td><td data-label="Purpose">Account, database, storage and server functions</td><td data-label="Data involved">Email, profile, meals, weight, meal photos sent for analysis</td></tr><tr><td data-label="Service">Google Gemini (AI)</td><td data-label="Purpose">Analysis of meal photos and nutrition labels</td><td data-label="Data involved">Image sent through our servers, without your name or email</td></tr><tr><td data-label="Service">Apple HealthKit / Google Health Connect</td><td data-label="Purpose">Optional reading of your steps</td><td data-label="Data involved">Today's step count (read-only, on your device)</td></tr><tr><td data-label="Service">Google AdMob</td><td data-label="Purpose">Rewarded ads for free users</td><td data-label="Data involved">Advertising ID, device technical data</td></tr><tr><td data-label="Service">RevenueCat</td><td data-label="Purpose">Management of KURA Pro subscriptions</td><td data-label="Data involved">Subscriber ID, purchase status and history</td></tr><tr><td data-label="Service">Open Food Facts</td><td data-label="Purpose">Nutrition data for barcodes</td><td data-label="Data involved">Scanned barcode number</td></tr><tr><td data-label="Service">Unsplash</td><td data-label="Purpose">Illustration photos for recipes</td><td data-label="Data involved">No personal data</td></tr></tbody></table></div>
+<p>Each of these services applies its own privacy policy.</p>
+<h3>1.4 Important details</h3>
+<ul><li><strong>AI photo analysis</strong>: the photo is sent to our servers and then to Google Gemini only to estimate the meal. It is not used for advertising. The analysis is an indicative estimate.</li><li><strong>Apple Health and Health Connect</strong>: the connection is optional and read-only. KURA only reads your steps to display them. This data is not sold, not used for advertising or marketing, and not shared with data brokers. You can remove access at any time in your phone settings.</li><li><strong>Ads</strong>: free users can watch a short rewarded ad to unlock a scan result. KURA Pro removes ads. You can manage the advertising identifier in your device settings (limit ad tracking, or deny tracking on iOS).</li><li><strong>Reminders</strong>: reminder notifications are local, scheduled on your device, and optional. You choose the time slots and can turn them off at any time.</li><li><strong>Offline</strong>: some data stays stored on your device. Scan features require an internet connection.</li></ul>
+<h3>1.5 Retention</h3>
+<p>We keep your data as long as your account exists. If you delete your account, your account, profile, log and weight data and your photos are deleted from our servers. Some information may be kept longer where the law requires it (for example purchase records handled by Apple, Google and RevenueCat).</p>
+<h3>1.6 Deleting your account and data</h3>
+<p>You can delete your account and all your data directly in the app: <strong>Profile → Delete my account</strong>. Deletion is permanent. If you cannot access the app, email fatnassim490@gmail.com from your account address and we will delete your account.</p>
+<p>If you have a KURA Pro subscription, deleting your account does not cancel it: cancel it in App Store or Google Play settings.</p>
+<h3>1.7 Your rights</h3>
+<p>Depending on your country (GDPR in the European Union, other local laws), you may request access, correction, deletion, restriction or portability of your data, and object to certain processing. You may withdraw consent at any time. Contact: fatnassim490@gmail.com. You may also contact your country's data protection authority.</p>
+<h3>1.8 International transfers</h3>
+<p>Our providers may process data outside your country, including in the United States. In that case, appropriate safeguards (standard contractual clauses or equivalent mechanisms) apply.</p>
+<h3>1.9 Security</h3>
+<p>Communications are encrypted (HTTPS). Each user can only access their own data, and sensitive functions are protected by authentication and usage limits. No system is perfect, but we take security seriously.</p>
+<h3>1.10 Minimum age</h3>
+<p>KURA is intended for people aged 13 and over (or the minimum digital consent age in your country if higher, for example 15 in France). We do not knowingly collect data from younger children. If you believe a child has sent us data, contact us so we can delete it.</p>
+<h3>1.11 Changes</h3>
+<p>We may update this policy. For significant changes, we will notify you in the app. The last update date is shown at the top of this page.</p>
+</section>
+<section class="card legal" id="terms-en" data-l="en">
+<h2>2. Terms of Service</h2>
+<p>By using KURA, you agree to these terms. If you do not agree, do not use the app.</p>
+<h3>2.1 The service</h3>
+<p>KURA is a general nutrition tracking tool: meal log, calorie and macronutrient estimates, statistics, recipe ideas and reminders. Some features are free, others require a KURA Pro subscription.</p>
+<h3>2.2 Medical disclaimer</h3>
+<p>KURA does not provide medical advice, diagnosis or treatment. Goals, calories, macronutrients and photo analyses are <strong>indicative estimates</strong> and may contain errors. KURA is not a substitute for the advice of a doctor, dietitian or other healthcare professional. Consult a professional before changing your diet or physical activity, especially if you are pregnant, have a medical condition, an eating disorder, allergies, or are following a treatment. Never delay seeking care because of something you read in the app. In an emergency, contact emergency services.</p>
+<h3>2.3 Your account</h3>
+<p>You are responsible for the accuracy of the information you provide and for keeping your password confidential. You must be at least 13 years old (or the minimum age required in your country). You can delete your account at any time in <strong>Profile → Delete my account</strong>.</p>
+<h3>2.4 Acceptable use</h3>
+<p>You agree not to: misuse the app or its services (for example circumvent rewarded ads or the subscription), try to access other users' data, submit illegal or unrelated content, or overload our servers with automated requests.</p>
+<h3>2.5 KURA Pro subscription (auto-renewing)</h3>
+<ul><li><strong>Plans</strong>: KURA Pro is offered as a monthly or yearly subscription. The prices shown in the app before purchase apply, and may vary by country and taxes.</li><li><strong>Payment</strong>: payment is charged to your Apple ID (App Store) or Google Play account when you confirm the purchase.</li><li><strong>Automatic renewal</strong>: the subscription renews automatically for the same period at the same price unless you cancel at least 24 hours before the end of the current period. Your account is charged within 24 hours before the end of the period.</li><li><strong>Managing and cancelling</strong>: manage or cancel your subscription in your Apple account settings (Settings → your name → Subscriptions) or in Google Play (Payments &amp; subscriptions → Subscriptions). Uninstalling the app or deleting your KURA account does not cancel the subscription.</li><li><strong>Refunds</strong>: handled by Apple or Google under their rules. We cannot directly refund a purchase made through a store.</li><li><strong>Free trial</strong>: if a free trial is offered, it is shown before purchase, and the paid subscription starts at the end of the trial unless you cancel before.</li><li><strong>Withdrawal right (EU)</strong>: for digital content supplied immediately, you acknowledge that performance begins at purchase, within the limits set by law and store rules.</li></ul>
+<h3>2.6 Advertising</h3>
+<p>Free users may see rewarded ads to unlock scan results. Ads are provided by Google AdMob. We do not control the content of advertisers' ads.</p>
+<h3>2.7 Intellectual property</h3>
+<p>KURA, its name, logo, code and content are protected. We grant you a personal, non-exclusive, revocable right to use the app. Your data remains yours.</p>
+<h3>2.8 Availability and limitation of liability</h3>
+<p>KURA is provided "as is", without guarantee of accuracy or uninterrupted availability. To the extent permitted by law, we are not liable for indirect damages or for decisions you make based on the app's estimates. Nothing in these terms limits the rights the law gives you as a consumer.</p>
+<h3>2.9 Termination</h3>
+<p>We may suspend or delete an account that breaks these terms. You may stop using KURA at any time.</p>
+<h3>2.10 Governing law and changes</h3>
+<p>These terms are governed by the law of Algeria, without prejudice to the consumer protection rules of your country of residence. We may change these terms; continued use of the app after an update means acceptance.</p>
+<h3>2.11 Contact and support</h3>
+<p>Questions, support or data-related requests: fatnassim490@gmail.com.</p>
+</section>
+</main>
+<footer>© KURA · Mohamed</footer>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  root.className = root.className.replace("no-js", "").trim();
+
+  var TITLES = {
+    fr: "KURA — Politique de confidentialité et Conditions d'utilisation",
+    en: "KURA — Privacy Policy and Terms of Service"
+  };
+
+  function setLang(lang, persist) {
+    if (lang !== "fr" && lang !== "en") lang = "fr";
+    root.setAttribute("data-lang", lang);
+    root.setAttribute("lang", lang);
+    document.title = TITLES[lang];
+    var btns = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].setAttribute("aria-pressed", btns[i].getAttribute("data-set-lang") === lang ? "true" : "false");
+    }
+    if (persist) { try { localStorage.setItem("kura-legal-lang", lang); } catch (e) {} }
+  }
+
+  // Langue : ?lang=en dans l'URL, sinon choix mémorisé, sinon français par défaut.
+  var initial = "fr";
+  try {
+    var q = new URLSearchParams(location.search).get("lang");
+    var saved = localStorage.getItem("kura-legal-lang");
+    if (q === "en" || q === "fr") initial = q;
+    else if (saved === "en" || saved === "fr") initial = saved;
+  } catch (e) {}
+  // Lien direct vers une section anglaise (#privacy-en / #terms-en) → anglais.
+  if (/-en$/.test(location.hash)) initial = "en";
+  setLang(initial, false);
+
+  var btns = document.querySelectorAll("[data-set-lang]");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      setLang(this.getAttribute("data-set-lang"), true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  // Surligne les champs entre crochets tant qu'ils n'ont pas été remplacés.
+  var re = /\[[A-ZÉ_]{3,}\]/g;
+  var walker = document.createTreeWalker(document.querySelector("main"), NodeFilter.SHOW_TEXT, null);
+  var nodes = [], n;
+  while ((n = walker.nextNode())) { if (re.test(n.nodeValue)) nodes.push(n); re.lastIndex = 0; }
+  nodes.forEach(function (node) {
+    var frag = document.createDocumentFragment(), text = node.nodeValue, last = 0, m;
+    re.lastIndex = 0;
+    while ((m = re.exec(text))) {
+      frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+      var s = document.createElement("span"); s.className = "ph"; s.textContent = m[0]; frag.appendChild(s);
+      last = m.index + m[0].length;
+    }
+    frag.appendChild(document.createTextNode(text.slice(last)));
+    node.parentNode.replaceChild(frag, node);
+  });
+})();
+</script>
+</body>
+</html>
